@@ -716,7 +716,8 @@ export default {
             return 0;
         },
         initArtistSwiper() {
-            console.log('initArtistSwiper', $('.card-item.active').find('.album-swiper-container'));
+            console.log($('.main-swiper-slide[data-cate="artists"]').find('.card-item.active'));
+            console.log('initArtistSwiper', $('.main-swiper-slide[data-cate="artists"]').find('.card-item.active').find('.album-swiper-container'));
             var album_swiper = new Swiper($('.card-item.active').find('.album-swiper-container'), {
 
             })
